@@ -3,6 +3,8 @@ import csv
 import time
 from datetime import datetime
 
+# This is the tool I used to continuously log the mass change from a balance.
+
 # --- CONFIGURATION ---
 PORT = 'COM6' #Check your device manager for the correct COM port
 BAUD_RATE = 9600
