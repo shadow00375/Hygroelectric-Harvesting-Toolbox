@@ -1,5 +1,5 @@
-import serial
-import csv
+from serial import Serial
+from csv import writer
 from datetime import datetime
 
 SERIAL_PORT = 'COM4'      # Change to your Arduino's port
@@ -12,10 +12,10 @@ print(f"Logging started at {start_time.isoformat()}")
 start_time_str = start_time.strftime('%Y-%m-%d_%H-%M-%S')
 OUTPUT_FILE = f'sensor_log_{start_time_str}.csv'
 
-ser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=2)
+ser = Serial(SERIAL_PORT, BAUD_RATE, timeout=2)
 
 with open(OUTPUT_FILE, 'w', newline='') as f:
-    writer = csv.writer(f)
+    writer = writer(f)
     writer.writerow(['time', 'temperature', 'humidity'])  # header
 
     print(f"Logging to {OUTPUT_FILE}. Press CTRL+C to stop.")
