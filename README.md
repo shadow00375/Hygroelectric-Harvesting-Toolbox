@@ -13,6 +13,6 @@
 > However a problem that comes with this is that I cannot access the code easily anymore. TAT <br>
 > I hard-coded SERIAL_PORT at "COM4" but just use DHT-22 Data logger.py if things goes wrong and change port number there...
 
-> Anyways good luck w these ;D
+> Anyways good luck w these ;D <br> -Edward
 ### The DHT-22 Data logger.py requires pyserial in the environment. My installed version was 3.5.
-> Edward
+
