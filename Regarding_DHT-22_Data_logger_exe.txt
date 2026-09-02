@@ -1,6 +1,6 @@
 When the DHT-22 connected to an arduino board, connect the middle pin to "D2" and the remaining 2 being GND and 5V.
 
-As I was carrying out the measurement on the borrowed laptop from Prof. Hsing,
+As I was carrying out the measurement on the borrowed laptop from another lab,
 which did not install python and not to mention the corresponding libraries, 
 I assembled DHT-22 Data logger.exe with pyinstall. >_>
 
@@ -10,4 +10,3 @@ I hard-coded SERIAL_PORT at "COM4" but just use DHT-22 Data logger.py if things 
 Anyways good luck w these ;D
 
 -Edward
-
